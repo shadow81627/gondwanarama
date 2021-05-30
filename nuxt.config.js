@@ -119,8 +119,14 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
-    manifest: {
-      lang: 'en',
+    meta: {
+      ogHost: env.BASE_URL,
+      // ogImage: {
+      //   path: '/cover.jpg',
+      //   width: 1200,
+      //   height: 600,
+      //   type: 'image/jpg',
+      // },
     },
   },
 
