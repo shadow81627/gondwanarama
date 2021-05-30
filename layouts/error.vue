@@ -1,13 +1,16 @@
 <template>
-  <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/"> Home page </NuxtLink>
-  </v-app>
+  <v-container class="nuxt-error pa-0 fill-height" fluid>
+    <v-row no-gutters class="pa-0 align-self-center">
+      <v-col class="pa-0" align="center">
+        <h1 v-if="error.statusCode === 404">
+          {{ pageNotFound }}
+        </h1>
+        <h1 v-else>
+          {{ otherError }}
+        </h1>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -34,9 +37,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-h1 {
-  font-size: 20px;
-}
-</style>
