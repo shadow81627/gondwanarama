@@ -112,6 +112,7 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -145,6 +146,25 @@ export default {
       xl: 1920,
     },
     domains: [env.HOST],
+  },
+
+  i18n: {
+    baseUrl: env.BASE_URL,
+    seo: false,
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        iso: 'en',
+        file: 'en.js',
+      },
+    ],
+    lazy: true,
+    langDir: 'lang/',
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
