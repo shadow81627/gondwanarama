@@ -1,6 +1,18 @@
 {
   "name": "gondwanarama",
   "version": "1.0.0",
+  "description": "Artist & palaeontologist from Brisbane, Australia. Big fan of marsupials, bugs, & ancient supercontinents. I'm Gondwanarama on Etsy!",
+  "author": {
+    "name": "Damien Robinson",
+    "email": "damien.robinson@daim.dev",
+    "url": "https://daim.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shadow81627/gondwanarama.git"
+  },
+  "bugs": "https://github.com/shadow81627/gondwanarama/issues",
+  "homepage": "https://gondwanarama.daim.dev",
   "private": true,
   "scripts": {
     "dev": "nuxt",
