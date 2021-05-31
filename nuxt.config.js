@@ -182,11 +182,9 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['vuetify/lib'],
-    extend(config, { isClient }) {
-      // Extend only webpack config for client-bundle
-      if (isClient) {
-        config.devtool = 'source-map'
-      }
+    extractCSS: true,
+    extend(config) {
+      config.devtool = 'source-map'
     },
   },
 }
