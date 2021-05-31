@@ -122,12 +122,12 @@ export default {
   pwa: {
     meta: {
       ogHost: env.BASE_URL,
-      // ogImage: {
-      //   path: '/cover.jpg',
-      //   width: 1200,
-      //   height: 600,
-      //   type: 'image/jpg',
-      // },
+      ogImage: {
+        path: '/cover.jpg',
+        width: 1200,
+        height: 600,
+        type: 'image/jpg',
+      },
     },
   },
 
