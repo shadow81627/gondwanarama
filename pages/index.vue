@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  layout: 'empty',
+  // layout: 'empty',
   head() {
     return {
       title: 'Chungus',
