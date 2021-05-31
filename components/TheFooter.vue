@@ -32,7 +32,6 @@
                     target="_blank"
                     v-bind="attrs"
                     icon
-                    class="pl-0"
                     :href="url"
                     rel="noopener"
                     v-on="on"
