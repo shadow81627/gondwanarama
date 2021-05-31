@@ -1,5 +1,11 @@
 # Releases
 
+## [1.2.1](https://github.com/shadow81627/gondwanarama/compare/v1.2.0...v1.2.1) (2021-05-31)
+
+### Bug Fixes
+
+- **env:** add to public run time config ([9cd0339](https://github.com/shadow81627/gondwanarama/commit/9cd033931d3c34234779c0c4b8deaa6e60fb2233))
+
 ## [1.2.0](https://github.com/shadow81627/gondwanarama/compare/v1.1.0...v1.2.0) (2021-05-31)
 
 ### Bug Fixes
