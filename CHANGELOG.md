@@ -1,5 +1,11 @@
 # Releases
 
+## [1.2.2](https://github.com/shadow81627/gondwanarama/compare/v1.2.1...v1.2.2) (2021-05-31)
+
+### Bug Fixes
+
+- **footer:** remove padding left 0 ([3070f39](https://github.com/shadow81627/gondwanarama/commit/3070f39e681bd30ade1115ccc0e187d3bb331abe))
+
 ## [1.2.1](https://github.com/shadow81627/gondwanarama/compare/v1.2.0...v1.2.1) (2021-05-31)
 
 ### Bug Fixes
