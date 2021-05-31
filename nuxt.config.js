@@ -30,15 +30,12 @@ const env = {
 const preconnectLinks = []
 
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   generate: {
-    // use '404.html' instead default '200.html'
     fallback: true,
   },
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: env.APP_NAME,
     titleTemplate: `%s | ${env.APP_NAME}`,
@@ -85,40 +82,29 @@ export default {
     ],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxt/image',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-fontawesome',
     'nuxt-i18n',
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     meta: {
       ogHost: env.BASE_URL,
@@ -147,6 +133,34 @@ export default {
       xl: 1920,
     },
     domains: [env.HOST],
+    presets: {
+      hero: {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        modifiers: {
+          quality: 'auto',
+          format: 'auto',
+          dpr: 'auto',
+        },
+      },
+      og: {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        modifiers: {
+          quality: 'auto',
+          format: 'auto',
+          dpr: 'auto',
+          width: 1280,
+          c: 'fill',
+        },
+      },
+      placeholder: {
+        modifiers: {
+          quality: 'auto',
+          format: 'auto',
+          dpr: 'auto',
+          width: 10,
+        },
+      },
+    },
   },
 
   i18n: {
@@ -168,10 +182,8 @@ export default {
     langDir: 'lang/',
   },
 
-  // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
-  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     optionsPath: './vuetify.options.js',
     customVariables: ['~/assets/variables.scss'],
@@ -179,7 +191,6 @@ export default {
     defaultAssets: false,
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['vuetify/lib'],
     extractCSS: true,

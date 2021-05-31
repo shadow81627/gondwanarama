@@ -1,90 +1,99 @@
 <template>
-  <v-app dark>
-    <v-navigation-drawer
+  <v-app clipped-left>
+    <!-- <v-navigation-drawer
       v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
+      :clipped="$vuetify.breakpoint.lgAndUp"
       app
+      class="hidden-print-only"
+      disable-resize-watcher
     >
-      <v-list>
+      <v-list dense>
         <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
+          v-for="item in items"
+          :key="item.text"
+          :to="localePath(item.route ? item.route : {})"
+          nuxt
+          class="text-decoration-none"
         >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
+            <v-list-item-title>{{ item.text }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
+    </v-navigation-drawer> -->
+    <v-app-bar
+      :clipped-left="$vuetify.breakpoint.lgAndUp"
+      app
+      fixed
+      class="hidden-print-only"
+      height="64"
+    >
+      <!-- <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" /> -->
+      <v-toolbar-title
+        class="ml-0 px-3 d-flex align-center"
+        @mouseover="titleHover = true"
+        @mouseleave="titleHover = false"
+      >
+        <img
+          :src="
+            titleHover
+              ? require('~/assets/img/logo-simple.svg?inline')
+              : require('~/assets/img/logo.svg?inline')
+          "
+          class="navbar-brand"
+          height="18"
+          width="160"
+          alt="gondwanarama"
+          title="gondwanarama"
+        />
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <template v-if="items && items.length" #extension>
+        <v-tabs class="hidden-sm-and-down px-3" optional right align-with-title>
+          <v-tabs-slider></v-tabs-slider>
+          <v-tab
+            v-for="{ text, route } in items"
+            :key="route"
+            :to="localePath(route ? route : {})"
+            text
+          >
+            {{ text }}
+          </v-tab>
+        </v-tabs>
+      </template>
     </v-app-bar>
-    <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+    <v-main role="main">
+      <nuxt style="min-height: 100vh" keep-alive></nuxt>
+      <TheFooter></TheFooter>
     </v-main>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light> mdi-repeat </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
   </v-app>
 </template>
 
 <script>
 export default {
-  data() {
+  data: () => ({ items: [], titleHover: null }),
+  head() {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
+    const { href: canonical } = i18nHead.link.find(
+      ({ hid }) => hid === 'i18n-can'
+    )
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs,
+      },
+      meta: [
+        ...i18nHead.meta,
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
+          content: canonical,
         },
       ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js',
+      link: [...i18nHead.link],
     }
   },
 }
