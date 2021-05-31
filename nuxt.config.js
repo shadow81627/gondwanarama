@@ -32,6 +32,10 @@ const preconnectLinks = []
 export default {
   target: 'static',
 
+  publicRuntimeConfig: {
+    ...env,
+  },
+
   generate: {
     fallback: true,
   },
