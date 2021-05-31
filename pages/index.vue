@@ -1,5 +1,5 @@
 <template>
-  <h1>Chungus</h1>
+  <Hero heading="Chungus"></Hero>
 </template>
 
 <script>
