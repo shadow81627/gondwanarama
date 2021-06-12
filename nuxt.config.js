@@ -58,20 +58,15 @@ export default {
       },
       {
         once: true,
-        name: 'version',
-        hid: 'version',
-        content: env.VERSION,
-      },
-      {
-        once: true,
         property: 'og:title',
         content: env.APP_NAME,
         template: `%s | ${env.APP_NAME}`,
         hid: 'og:title',
       },
       {
-        name: 'version',
-        content: pkg.version,
+        hid: 'description',
+        name: 'description',
+        content: pkg.description,
       },
     ],
     link: [
