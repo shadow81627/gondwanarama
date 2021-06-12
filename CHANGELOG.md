@@ -1,5 +1,11 @@
 # Releases
 
+## [1.2.3](https://github.com/shadow81627/gondwanarama/compare/v1.2.2...v1.2.3) (2021-06-12)
+
+### Bug Fixes
+
+- **home:** add app name as heading ([1a6c448](https://github.com/shadow81627/gondwanarama/commit/1a6c448a2bfe21559a8b07b06239a302a1658585))
+
 ## [1.2.2](https://github.com/shadow81627/gondwanarama/compare/v1.2.1...v1.2.2) (2021-05-31)
 
 ### Bug Fixes
