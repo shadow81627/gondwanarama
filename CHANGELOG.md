@@ -1,5 +1,11 @@
 # Releases
 
+## [1.3.0](https://github.com/shadow81627/gondwanarama/compare/v1.2.4...v1.3.0) (2021-06-12)
+
+### Features
+
+- sitemap ([1057fb9](https://github.com/shadow81627/gondwanarama/commit/1057fb999c293072d1aee4c5feaa241736c3ba30))
+
 ## [1.2.4](https://github.com/shadow81627/gondwanarama/compare/v1.2.3...v1.2.4) (2021-06-12)
 
 ### Bug Fixes
