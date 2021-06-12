@@ -1,5 +1,15 @@
 # Releases
 
+## [1.2.4](https://github.com/shadow81627/gondwanarama/compare/v1.2.3...v1.2.4) (2021-06-12)
+
+### Bug Fixes
+
+- **home:** use config for app name ([97341e1](https://github.com/shadow81627/gondwanarama/commit/97341e1dc71433b524c85b5281afd8a1847efd22))
+
+### Performance Improvements
+
+- remove commit and version ([ce14b19](https://github.com/shadow81627/gondwanarama/commit/ce14b197b4d0919464ce8ca98043c3c9bc4f8f42))
+
 ## [1.2.3](https://github.com/shadow81627/gondwanarama/compare/v1.2.2...v1.2.3) (2021-06-12)
 
 ### Bug Fixes
