@@ -95,11 +95,18 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxt/content',
+    '@nuxtjs/gtm',
     'nuxt-fontawesome',
     'nuxt-i18n',
   ],
 
   axios: {},
+
+  gtm: {
+    id: 'G-GTJ1JMYZKK',
+    pageTracking: true,
+    scriptDefer: true,
+  },
 
   pwa: {
     meta: {
