@@ -25,7 +25,8 @@
     "lint": "npm run lint:js && npm run lint:style",
     "lint:fix": "npm run lint:js -- --fix && npm run lint:style -- --fix",
     "lhci:autorun": "lhci autorun",
-    "test": ""
+    "test": "codeceptjs run --steps",
+    "test:e2e": "codeceptjs run --steps"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -68,6 +69,8 @@
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.0",
     "babel-eslint": "10.1.0",
+    "codeceptjs": "3.0.7",
+    "codeceptjs-resemblehelper": "1.9.3",
     "eslint": "7.27.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-nuxt": "2.0.0",
@@ -75,8 +78,10 @@
     "eslint-plugin-vue": "7.10.0",
     "husky": "4.3.8",
     "lint-staged": "10.5.4",
+    "playwright": "1.12.2",
     "prettier": "2.3.0",
-    "sass": "1.34.0",
+    "sass": "1.32.13",
+    "serve-handler": "6.1.3",
     "stylelint": "13.13.1",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "21.0.0",
