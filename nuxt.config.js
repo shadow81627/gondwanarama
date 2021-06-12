@@ -18,9 +18,6 @@ const env = {
   HOST,
   PORT,
   BASE_URL,
-  VERSION: pkg.version,
-  COMMIT:
-    process.env.npm_package_gitHead || process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
   APP_NAME:
     process.env.APP_NAME ||

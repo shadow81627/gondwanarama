@@ -5,9 +5,6 @@
         <v-col cols="auto">
           <v-card flat color="transparent">
             <v-card-text>
-              <span>{{ $config.VERSION }}</span>
-              <span v-if="$config.COMMIT">{{ shortHash($config.COMMIT) }}</span>
-              <span v-if="$config.VERSION && $config.COMMIT">|</span>
               <a
                 href="https://github.com/shadow81627/gondwanarama/blob/main/CHANGELOG.md"
                 rel="noopener"
@@ -15,6 +12,27 @@
               >
                 <span>Changelog</span>
               </a>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-spacer />
+        <!-- <v-col cols="auto">
+        </v-col> -->
+      </v-row>
+      <v-row no-gutters>
+        <v-col cols="auto">
+          <v-card flat tile color="transparent">
+            <v-card-text class="py-2">
+              <font-awesome-icon
+                :icon="faMapMarker"
+                title="location"
+                fixed-width
+              />
+              <span>Brisbane, Australia</span>
+              <span
+                >© <time datetime="2021">2021</time> | Site By
+                <a href="https://daim.dev">Daim</a>
+              </span>
             </v-card-text>
           </v-card>
         </v-col>
@@ -54,28 +72,6 @@
               </v-btn>
             </v-card-actions>
           </v-card>
-        </v-col>
-      </v-row>
-      <v-row no-gutters>
-        <v-col cols="auto">
-          <v-card flat tile color="transparent">
-            <v-card-text class="py-2">
-              <font-awesome-icon
-                :icon="faMapMarker"
-                title="location"
-                fixed-width
-              />
-              <span>Brisbane, Australia</span>
-              <span
-                >© <time datetime="2021">2021</time> | Site By
-                <a href="https://daim.dev">Daim</a>
-              </span>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-spacer />
-        <v-col cols="auto">
-          <LastModified v-bind="{ utc }" />
         </v-col>
       </v-row>
     </v-container>
