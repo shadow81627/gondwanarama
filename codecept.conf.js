@@ -31,9 +31,7 @@ exports.config = {
     },
   },
   bootstrap() {
-    server.listen(3001, () => {
-      console.log('Running at http://localhost:3001')
-    })
+    server.listen(3001, () => {})
   },
   teardown() {
     server.close()
