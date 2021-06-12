@@ -98,6 +98,9 @@ export default {
     '@nuxtjs/gtm',
     'nuxt-fontawesome',
     'nuxt-i18n',
+
+    // always declare the sitemap module at end of array
+    '@nuxtjs/sitemap',
   ],
 
   axios: {},
