@@ -144,7 +144,7 @@ export default {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
           quality: 'auto',
-          format: 'auto',
+          format: 'webp',
           dpr: 'auto',
         },
       },
@@ -152,7 +152,7 @@ export default {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
           quality: 'auto',
-          format: 'auto',
+          format: 'jpg',
           dpr: 'auto',
           width: 1280,
           c: 'fill',
@@ -161,7 +161,7 @@ export default {
       placeholder: {
         modifiers: {
           quality: 'auto',
-          format: 'auto',
+          format: 'jpg',
           dpr: 'auto',
           width: 10,
         },
