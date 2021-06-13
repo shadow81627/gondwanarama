@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.2](https://github.com/shadow81627/gondwanarama/compare/v1.4.1...v1.4.2) (2021-06-13)
+
+### Bug Fixes
+
+- **hero:** call srcset ([be54a17](https://github.com/shadow81627/gondwanarama/commit/be54a1739d331be2b8f2e2c8a9bbeef6589cf1da))
+
 ## [1.4.1](https://github.com/shadow81627/gondwanarama/compare/v1.4.0...v1.4.1) (2021-06-13)
 
 ### Bug Fixes
