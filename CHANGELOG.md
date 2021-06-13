@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.1](https://github.com/shadow81627/gondwanarama/compare/v1.4.0...v1.4.1) (2021-06-13)
+
+### Bug Fixes
+
+- **image:** remove filename path ([0299d4f](https://github.com/shadow81627/gondwanarama/commit/0299d4fbe1944ecf2ff9980862775d61d755ddf6))
+
 ## [1.4.0](https://github.com/shadow81627/gondwanarama/compare/v1.3.0...v1.4.0) (2021-06-13)
 
 ### Features
