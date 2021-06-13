@@ -194,7 +194,7 @@ export default {
   },
 
   build: {
-    transpile: ['vuetify/lib'],
+    transpile: ['lodash-es', 'vuetify/lib'],
     extractCSS: true,
     filenames: {
       app: ({ isDev, isModern }) =>

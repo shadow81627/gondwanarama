@@ -28,6 +28,7 @@
       "@nuxtjs/axios",
       "@nuxt/content",
       "@nuxt/image",
+      "@types/lodash",
       "@types/node"
     ]
   },
