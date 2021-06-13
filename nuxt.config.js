@@ -130,7 +130,7 @@ export default {
 
   image: {
     provider: 'static',
-    staticFilename: '[publicPath]/img/[name][ext]?v=[hash]',
+    // staticFilename: '[publicPath]/img/[name][ext]?v=[hash]',
     screens: {
       placeholder: 10,
       xs: 320,
