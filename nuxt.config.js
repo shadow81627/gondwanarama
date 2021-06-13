@@ -130,6 +130,7 @@ export default {
 
   image: {
     provider: 'static',
+    staticFilename: '[publicPath]/img/[name][ext]?v=[hash]',
     screens: {
       placeholder: 10,
       xs: 320,
@@ -143,26 +144,21 @@ export default {
       hero: {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
-          quality: 'auto',
+          quality: '70',
           format: 'webp',
-          dpr: 'auto',
         },
       },
       og: {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
-          quality: 'auto',
+          quality: '70',
           format: 'jpg',
-          dpr: 'auto',
           width: 1280,
-          c: 'fill',
         },
       },
       placeholder: {
         modifiers: {
-          quality: 'auto',
           format: 'jpg',
-          dpr: 'auto',
           width: 10,
         },
       },
