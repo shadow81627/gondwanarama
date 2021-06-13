@@ -98,8 +98,8 @@ export default {
             {},
             { preset: 'hero' }
           )}`,
-          imagesrcset: this._srcset.srcset,
-          imagesizes: this._srcset.size,
+          imagesrcset: this._srcset().srcset,
+          imagesizes: this._srcset().size,
         },
       ],
     }
