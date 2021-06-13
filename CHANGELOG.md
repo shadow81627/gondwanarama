@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.0](https://github.com/shadow81627/gondwanarama/compare/v1.3.0...v1.4.0) (2021-06-13)
+
+### Features
+
+- breadcrumbs ([2c62c0b](https://github.com/shadow81627/gondwanarama/commit/2c62c0b1479b190d383b3fe65911b8ddcb92ce1e))
+
 ## [1.3.0](https://github.com/shadow81627/gondwanarama/compare/v1.2.4...v1.3.0) (2021-06-12)
 
 ### Features
