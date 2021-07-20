@@ -1,5 +1,12 @@
 # Releases
 
+## [1.4.3](https://github.com/shadow81627/gondwanarama/compare/v1.4.2...v1.4.3) (2021-07-20)
+
+### Bug Fixes
+
+- **deps:** bump actions/setup-dotnet from 1.8.0 to 1.8.1 ([#15](https://github.com/shadow81627/gondwanarama/issues/15)) ([e320d4a](https://github.com/shadow81627/gondwanarama/commit/e320d4aac2d663e0bab06db85bc890793bc20812))
+- **deps:** bump actions/setup-node from 2.1.5 to 2.2.0 ([#16](https://github.com/shadow81627/gondwanarama/issues/16)) ([e5f27aa](https://github.com/shadow81627/gondwanarama/commit/e5f27aa2d119722bc6a2280a84e2b124816602fd))
+
 ## [1.4.2](https://github.com/shadow81627/gondwanarama/compare/v1.4.1...v1.4.2) (2021-06-13)
 
 ### Bug Fixes
