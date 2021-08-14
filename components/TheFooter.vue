@@ -79,7 +79,11 @@
 </template>
 
 <script>
-import { faInstagram, faEtsy } from '@fortawesome/free-brands-svg-icons'
+import {
+  faTwitter,
+  faInstagram,
+  faEtsy,
+} from '@fortawesome/free-brands-svg-icons'
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons'
 export default {
   data: () => ({
@@ -87,10 +91,17 @@ export default {
     faMapMarker,
     location: 'Turrbal/Jagera country',
     icons: {
+      faTwitter,
       faInstagram,
       faEtsy,
     },
     profiles: [
+      {
+        icon: 'faTwitter',
+        network: 'Twitter',
+        username: 'marsupialtapir',
+        url: 'https://twitter.com/marsupialtapir',
+      },
       {
         icon: 'faInstagram',
         network: 'Instagram',
