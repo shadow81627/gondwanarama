@@ -46,8 +46,8 @@
           class="navbar-brand"
           height="18"
           width="160"
-          alt="gondwanarama"
-          title="gondwanarama"
+          :alt="$config.APP_NAME"
+          :title="$config.APP_NAME"
         />
       </v-toolbar-title>
       <v-spacer></v-spacer>
