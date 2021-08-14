@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.4](https://github.com/shadow81627/gondwanarama/compare/v1.4.3...v1.4.4) (2021-08-14)
+
+### Bug Fixes
+
+- **deps:** bump actions/setup-node from 2.2.0 to 2.4.0 ([#27](https://github.com/shadow81627/gondwanarama/issues/27)) ([17d74f8](https://github.com/shadow81627/gondwanarama/commit/17d74f855f9f9e7c809b34f3a64a5f7b394d8bac))
+
 ## [1.4.3](https://github.com/shadow81627/gondwanarama/compare/v1.4.2...v1.4.3) (2021-07-20)
 
 ### Bug Fixes
