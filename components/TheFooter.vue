@@ -28,7 +28,7 @@
                 title="location"
                 fixed-width
               />
-              <span>Brisbane, Australia</span>
+              <span>{{ location }}</span>
               <span
                 >© <time datetime="2021">2021</time> | Site By
                 <a href="https://daim.dev">Daim</a>
@@ -85,6 +85,7 @@ export default {
   data: () => ({
     utc: false,
     faMapMarker,
+    location: 'Turrbal/Jagera country',
     icons: {
       faInstagram,
       faEtsy,
