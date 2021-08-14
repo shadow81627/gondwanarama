@@ -32,6 +32,11 @@
     "*.{js,vue}": "eslint",
     "*.{css,vue}": "stylelint"
   },
+  "engines": {
+    "node": ">=14.x",
+    "npm": "please-use-yarn",
+    "yarn": ">=2.x"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.35",
     "@fortawesome/free-brands-svg-icons": "5.15.3",
