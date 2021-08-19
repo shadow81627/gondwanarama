@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.5](https://github.com/shadow81627/gondwanarama/compare/v1.4.4...v1.4.5) (2021-08-19)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.13.6 ([07d4443](https://github.com/shadow81627/gondwanarama/commit/07d44437b3544fb69b58cc4eb2fa05e66c7fdd20))
+
 ## [1.4.4](https://github.com/shadow81627/gondwanarama/compare/v1.4.3...v1.4.4) (2021-08-14)
 
 ### Bug Fixes
