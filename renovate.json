@@ -1,5 +1,6 @@
 {
-  "prConcurrentLimit": 2,
+  "prConcurrentLimit": 1,
+  "prCreation": "status-success",
   "dependencyDashboard": true,
   "rollbackPrs": true,
   "automerge": true,
