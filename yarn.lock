@@ -2656,10 +2656,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.170":
-  version: 4.14.170
-  resolution: "@types/lodash@npm:4.14.170"
-  checksum: 238a440804e787b85461cc280a11926c80779f7502fec21a70b4424d5feba4cc34cdcbbbc1dca2ec5e75b06d5dc42e42add798be3b6651e8dce9f4b5318d6022
+"@types/lodash@npm:4.14.172":
+  version: 4.14.172
+  resolution: "@types/lodash@npm:4.14.172"
+  checksum: 5fc51ea40d7e455bd1c760bcc60c9e81f82d85988666d4d4969bd8311367c63bbf1fe2be48755ba87836710e45fff94014ec164ebe6ccaa72815014981152434
   languageName: node
   linkType: hard
 
@@ -8570,7 +8570,7 @@ fsevents@~2.3.2:
     "@nuxtjs/vuetify": 1.11.3
     "@semantic-release/changelog": 5.0.1
     "@semantic-release/git": 9.0.0
-    "@types/lodash": 4.14.170
+    "@types/lodash": 4.14.172
     babel-eslint: 10.1.0
     codeceptjs: 3.0.7
     codeceptjs-resemblehelper: 1.9.4
