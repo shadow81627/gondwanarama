@@ -8621,7 +8621,7 @@ fsevents@~2.3.2:
     stylelint: 13.13.1
     stylelint-config-prettier: 8.0.2
     stylelint-config-standard: 21.0.0
-    vuetify: 2.5.1
+    vuetify: 2.5.8
   languageName: unknown
   linkType: soft
 
@@ -18445,16 +18445,7 @@ typescript@~4.2:
   languageName: node
   linkType: hard
 
-"vuetify@npm:2.5.1":
-  version: 2.5.1
-  resolution: "vuetify@npm:2.5.1"
-  peerDependencies:
-    vue: ^2.6.4
-  checksum: dd3e84a7c2c8ddaaec494f139a4e258444b4bb247732b063ebbbb743aa6c2056f829cbb04f70438b795e256911a46dc19c2eebb079a19276dca58c5dc723b8a2
-  languageName: node
-  linkType: hard
-
-"vuetify@npm:^2.4.2":
+"vuetify@npm:2.5.8, vuetify@npm:^2.4.2":
   version: 2.5.8
   resolution: "vuetify@npm:2.5.8"
   peerDependencies:
