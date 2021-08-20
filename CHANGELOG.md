@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.7](https://github.com/shadow81627/gondwanarama/compare/v1.4.6...v1.4.7) (2021-08-20)
+
+### Bug Fixes
+
+- **deps:** update dependency dayjs to v1.10.6 ([4b83200](https://github.com/shadow81627/gondwanarama/commit/4b83200b784eb7a13560010bc0388516b0a5f1d5))
+
 ## [1.4.6](https://github.com/shadow81627/gondwanarama/compare/v1.4.5...v1.4.6) (2021-08-20)
 
 ### Bug Fixes
