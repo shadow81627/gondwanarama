@@ -49,7 +49,7 @@
     "@nuxtjs/pwa": "3.3.5",
     "@types/lodash": "4.14.172",
     "core-js": "3.13.1",
-    "dayjs": "1.10.5",
+    "dayjs": "1.10.6",
     "lodash-es": "4.17.21",
     "nuxt": "2.15.8",
     "nuxt-fontawesome": "0.4.0",
