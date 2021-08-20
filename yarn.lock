@@ -1921,24 +1921,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/image@npm:0.4.13":
-  version: 0.4.13
-  resolution: "@nuxt/image@npm:0.4.13"
+"@nuxt/image@npm:0.5.0":
+  version: 0.5.0
+  resolution: "@nuxt/image@npm:0.5.0"
   dependencies:
+    consola: ^2.15.3
     defu: ^5.0.0
     fs-extra: ^10.0.0
     hasha: ^5.2.2
     image-meta: ^0.0.1
-    ipx: ^0.6.1
+    ipx: ^0.6.4
     is-https: ^4.0.0
     lru-cache: ^6.0.0
     node-fetch: ^2.6.1
     p-limit: ^3.1.0
     rc9: ^1.2.0
     requrl: ^3.0.2
-    ufo: ^0.7.5
+    semver: ^7.3.5
+    ufo: ^0.7.7
     upath: ^2.0.1
-  checksum: c6be223b2330d6cce16d890bd73f160f19f15f9925c60e895df1b567de6e8fe22387779a83b30c0925cce8eaf1b75ab42b6a5c8d44ab6321911962d0ceef10f0
+  checksum: 9fc00d37b91b11999e741e3ee7e9b942775f89e645cc0a1b5c66779523304a34dffe2a99e35d50253294d57ba428a574f85c80581fa72047b7879f79377bc800
   languageName: node
   linkType: hard
 
@@ -8548,7 +8550,7 @@ fsevents@~2.3.2:
     "@lhci/cli": 0.7.2
     "@mdi/js": 5.9.55
     "@nuxt/content": 1.14.0
-    "@nuxt/image": 0.4.13
+    "@nuxt/image": 0.5.0
     "@nuxt/types": 2.15.8
     "@nuxt/typescript-build": 2.1.0
     "@nuxtjs/axios": 5.13.6
@@ -9616,7 +9618,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"ipx@npm:^0.6.1":
+"ipx@npm:^0.6.4":
   version: 0.6.7
   resolution: "ipx@npm:0.6.7"
   dependencies:
@@ -17672,6 +17674,13 @@ typescript@~4.2:
   version: 0.7.7
   resolution: "ufo@npm:0.7.7"
   checksum: d7d182c21ad01d3d8954875b67958f2adc612fa9a16faa5f366e419736fa69a1f61285858ded3314e410d8564ddbe8ce842280921f4cfba35ab9caae7e817107
+  languageName: node
+  linkType: hard
+
+"ufo@npm:^0.7.7":
+  version: 0.7.9
+  resolution: "ufo@npm:0.7.9"
+  checksum: 8a141889382dfe9fe42af625316ea0bc60e287ed81275befa699d3c099af44232720ea7b72d5ea738e4766e79adb8dc901bd7f788f9c2057d0ec2389d9f06df5
   languageName: node
   linkType: hard
 
