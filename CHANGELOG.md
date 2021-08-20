@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.8](https://github.com/shadow81627/gondwanarama/compare/v1.4.7...v1.4.8) (2021-08-20)
+
+### Bug Fixes
+
+- **deps:** update font awesome ([ee78628](https://github.com/shadow81627/gondwanarama/commit/ee78628561d80c0710c14b44362cb25c001aafac))
+
 ## [1.4.7](https://github.com/shadow81627/gondwanarama/compare/v1.4.6...v1.4.7) (2021-08-20)
 
 ### Bug Fixes
