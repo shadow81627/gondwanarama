@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.6](https://github.com/shadow81627/gondwanarama/compare/v1.4.5...v1.4.6) (2021-08-20)
+
+### Bug Fixes
+
+- **deps:** update dependency @types/lodash to v4.14.172 ([c925206](https://github.com/shadow81627/gondwanarama/commit/c925206cdbc10923c037a6687d215e1a272b807c))
+
 ## [1.4.5](https://github.com/shadow81627/gondwanarama/compare/v1.4.4...v1.4.5) (2021-08-19)
 
 ### Bug Fixes
