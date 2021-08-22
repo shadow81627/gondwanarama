@@ -5175,9 +5175,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"codeceptjs@npm:3.0.7":
-  version: 3.0.7
-  resolution: "codeceptjs@npm:3.0.7"
+"codeceptjs@npm:3.1.1":
+  version: 3.1.1
+  resolution: "codeceptjs@npm:3.1.1"
   dependencies:
     "@codeceptjs/configure": ^0.6.2
     "@codeceptjs/helper": ^1.0.2
@@ -5214,7 +5214,7 @@ __metadata:
     faker: ^5.5.1
   bin:
     codeceptjs: bin/codecept.js
-  checksum: fd8597075faab0f172a76a8de23dd47f51d1803bbae66f99b60db025c871446e356e9e48db76f1161c0ba319bac94dfea3779994a129ee9d4ba4366b7def0341
+  checksum: e2f586e2aebe3242f23d14aff880ce45f819ae0b28bc16f73b4bd285b29350a2642bc5c55664e43c86945f8f357bea43495d971797d2df14dca982b16fe8c817
   languageName: node
   linkType: hard
 
@@ -8563,7 +8563,7 @@ fsevents@~2.3.2:
     "@semantic-release/git": 9.0.0
     "@types/lodash": 4.14.172
     babel-eslint: 10.1.0
-    codeceptjs: 3.0.7
+    codeceptjs: 3.1.1
     codeceptjs-resemblehelper: 1.9.4
     core-js: 3.13.1
     dayjs: 1.10.6
