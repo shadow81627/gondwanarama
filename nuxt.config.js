@@ -140,29 +140,6 @@ export default {
       xl: 1920,
     },
     domains: [env.HOST],
-    presets: {
-      hero: {
-        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
-        modifiers: {
-          quality: '70',
-          format: 'webp',
-        },
-      },
-      og: {
-        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
-        modifiers: {
-          quality: '70',
-          format: 'jpg',
-          width: 1280,
-        },
-      },
-      placeholder: {
-        modifiers: {
-          format: 'jpg',
-          width: 10,
-        },
-      },
-    },
   },
 
   i18n: {
