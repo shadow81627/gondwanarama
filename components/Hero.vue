@@ -10,8 +10,6 @@
             :alt="alt"
             max-height="80vh"
             :sizes="size"
-            :width="width"
-            :height="height"
             :gradient="gradient"
             :contain="contain"
             color="grey"
@@ -108,13 +106,13 @@ export default {
       return `${this.$config.BASE_URL}${this._src}`
     },
     _src() {
-      return img().src
+      return this.img.src
     },
     size() {
-      return img().size
+      return this.img.size
     },
     placeholder() {
-      return $img(src, { format: 'jpg', width: 10, quality: 70 })
+      return this.$img(this.src, { format: 'jpg', width: 10, quality: 70 })
     },
   },
 }
