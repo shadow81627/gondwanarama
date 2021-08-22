@@ -1,5 +1,11 @@
 # Releases
 
+## [1.4.9](https://github.com/shadow81627/gondwanarama/compare/v1.4.8...v1.4.9) (2021-08-22)
+
+### Bug Fixes
+
+- **hero:** preload size ([#42](https://github.com/shadow81627/gondwanarama/issues/42)) ([b4745fa](https://github.com/shadow81627/gondwanarama/commit/b4745fafe2d41ccc9383847381e39420acae901b))
+
 ## [1.4.8](https://github.com/shadow81627/gondwanarama/compare/v1.4.7...v1.4.8) (2021-08-20)
 
 ### Bug Fixes
