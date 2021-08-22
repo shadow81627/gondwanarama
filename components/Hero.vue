@@ -4,18 +4,16 @@
       <v-col cols="12" align-self="center">
         <v-card :color="color" flat tile dark>
           <v-img
-            :lazy-src="$img(src, {}, { preset: 'placeholder' })"
-            :src="_srcset(src, { preset: 'hero' }).src"
-            :srcset="_srcset(src, { preset: 'hero' }).srcset"
+            :lazy-src="placeholder"
+            :src="_src"
+            :srcset="srcset"
             :alt="alt"
             max-height="80vh"
-            :sizes="_srcset(src, { preset: 'hero' }).size"
-            :width="width"
+            :sizes="size"
             :height="height"
             :gradient="gradient"
             :contain="contain"
             color="grey"
-            :aspect-ratio="aspectRatio"
           >
             <slot>
               <v-container
@@ -42,11 +40,8 @@
 </template>
 
 <script>
-import ImageSources from '@/mixins/srcset'
 export default {
-  mixins: [ImageSources],
   props: {
-    aspectRatio: { type: Number, default: 16 / 9 },
     heading: { type: String, default: null },
     subheading: { type: String, default: null },
     alt: { type: String, default: '' },
@@ -55,8 +50,8 @@ export default {
       type: String,
       default: 'rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)',
     },
-    width: { type: [Number, String], default: null },
-    height: { type: [Number, String], default: null },
+    width: { type: [Number, String], default: 1280 },
+    height: { type: [Number, String], default: 630 },
     color: {
       type: String,
       default: null,
@@ -72,11 +67,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `${this.$config.BASE_URL}${this.$img(
-            this.src,
-            {},
-            { preset: 'og' }
-          )}`,
+          content: this.href,
         },
         {
           hid: 'og:image:width',
@@ -93,16 +84,37 @@ export default {
         {
           rel: 'preload',
           as: 'image',
-          href: `${this.$config.BASE_URL}${this.$img(
-            this.src,
-            {},
-            { preset: 'hero' }
-          )}`,
-          imagesrcset: this._srcset().srcset,
-          imagesizes: this._srcset().size,
+          href: this.href,
+          imagesrcset: this.srcset,
+          imagesizes: this.size,
         },
       ],
     }
+  },
+  computed: {
+    img() {
+      const { height } = this
+      return this.$img.getSizes(this.src, {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        modifiers: {
+          format: 'webp',
+          quality: 70,
+          height,
+        },
+      })
+    },
+    href() {
+      return `${this.$config.BASE_URL}${this._src}`
+    },
+    _src() {
+      return this.img.src
+    },
+    size() {
+      return this.img.size
+    },
+    placeholder() {
+      return this.$img(this.src, { format: 'jpg', width: 10, quality: 70 })
+    },
   },
 }
 </script>
