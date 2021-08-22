@@ -10,6 +10,7 @@
             :alt="alt"
             max-height="80vh"
             :sizes="size"
+            :height="height"
             :gradient="gradient"
             :contain="contain"
             color="grey"
