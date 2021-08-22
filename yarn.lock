@@ -2293,16 +2293,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/vuetify@npm:1.11.3":
-  version: 1.11.3
-  resolution: "@nuxtjs/vuetify@npm:1.11.3"
+"@nuxtjs/vuetify@npm:1.12.1":
+  version: 1.12.1
+  resolution: "@nuxtjs/vuetify@npm:1.12.1"
   dependencies:
     deepmerge: ^4.2.2
-    sass: ^1.32.4
-    sass-loader: ^10.1.1
-    vuetify: ^2.4.2
-    vuetify-loader: ^1.6.0
-  checksum: 380261911996f26b951cc8a25094186b32fd4d31f3e4af2c2008a975c1cdde63de4e2eb1c063007552016a3ac55d7ff948b0580c8af0671ea6a24ebb18c56ccb
+    sass: ~1.32.13
+    sass-loader: ^10.2.0
+    vuetify: ^2.5.3
+    vuetify-loader: ^1.7.2
+  checksum: e7f3df4aeb34b8fcfb3f99cacf5fd3de7e5e429f8b8b9ac5eda6a64a863ef0c9803f37b24b0fef262bab671f5e911df25848a976109e67142157a13cf501875d
   languageName: node
   linkType: hard
 
@@ -8558,7 +8558,7 @@ fsevents@~2.3.2:
     "@nuxtjs/pwa": 3.3.5
     "@nuxtjs/sitemap": 2.4.0
     "@nuxtjs/stylelint-module": 4.0.0
-    "@nuxtjs/vuetify": 1.11.3
+    "@nuxtjs/vuetify": 1.12.1
     "@semantic-release/changelog": 5.0.1
     "@semantic-release/git": 9.0.0
     "@types/lodash": 4.14.172
@@ -15711,7 +15711,7 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:^10.1.1":
+"sass-loader@npm:^10.2.0":
   version: 10.2.0
   resolution: "sass-loader@npm:10.2.0"
   dependencies:
@@ -15736,7 +15736,7 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"sass@npm:1.32.13":
+"sass@npm:1.32.13, sass@npm:~1.32.13":
   version: 1.32.13
   resolution: "sass@npm:1.32.13"
   dependencies:
@@ -15744,17 +15744,6 @@ resolve@~1.7.1:
   bin:
     sass: sass.js
   checksum: 51b798280bd96c8e8d580592bcd40947075e9e55109bbc5e21037427ac2a78e58d3c3cf4b8b33ac9d592758376597d15cd28ddde1cda2885d19791d6321989d4
-  languageName: node
-  linkType: hard
-
-"sass@npm:^1.32.4":
-  version: 1.37.5
-  resolution: "sass@npm:1.37.5"
-  dependencies:
-    chokidar: ">=3.0.0 <4.0.0"
-  bin:
-    sass: sass.js
-  checksum: 301925e66ea8ac402fedc8e9b938fc000b8ae683ffeae474ed05bf34ee8a4b7a2e1a42a37a1bf2fbb7a5a9e88df5c0175bdbb3866cedc3bedde41a4270514d75
   languageName: node
   linkType: hard
 
@@ -18394,7 +18383,7 @@ typescript@~4.2:
   languageName: node
   linkType: hard
 
-"vuetify-loader@npm:^1.6.0":
+"vuetify-loader@npm:^1.7.2":
   version: 1.7.2
   resolution: "vuetify-loader@npm:1.7.2"
   dependencies:
@@ -18409,7 +18398,7 @@ typescript@~4.2:
   languageName: node
   linkType: hard
 
-"vuetify@npm:2.5.8, vuetify@npm:^2.4.2":
+"vuetify@npm:2.5.8, vuetify@npm:^2.5.3":
   version: 2.5.8
   resolution: "vuetify@npm:2.5.8"
   peerDependencies:
