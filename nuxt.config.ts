@@ -1,12 +1,11 @@
 import { defineNuxtConfig } from 'nuxt'
-// import pkg from './package'
+import pkg from './package'
 
-// const env = {
-//   BASE_URL,
-//   APP_NAME:
-//     process.env.APP_NAME ||
-//     `${pkg.name.charAt(0).toUpperCase()}${pkg.name.slice(1)}`,
-// }
+const env = {
+  APP_NAME:
+    process.env.APP_NAME ??
+    `${pkg.name.charAt(0).toUpperCase()}${pkg.name.slice(1)}`,
+}
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -18,43 +17,43 @@ export default defineNuxtConfig({
     },
   },
 
-  // head: {
-  //   title: env.APP_NAME,
-  //   // titleTemplate: `%s | ${env.APP_NAME}`,
-  //   meta: [
-  //     {
-  //       once: true,
-  //       name: 'charset',
-  //       hid: 'charset',
-  //       content: 'utf-8',
-  //     },
-  //     {
-  //       once: true,
-  //       hid: 'viewport',
-  //       name: 'viewport',
-  //       content: 'width=device-width, initial-scale=1',
-  //     },
-  //     {
-  //       once: true,
-  //       property: 'og:title',
-  //       content: env.APP_NAME,
-  //       template: `%s | ${env.APP_NAME}`,
-  //       hid: 'og:title',
-  //     },
-  //     {
-  //       hid: 'description',
-  //       name: 'description',
-  //       content: pkg.description,
-  //     },
-  //   ],
-  //   link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-  // },
+  head: {
+    title: env.APP_NAME,
+    titleTemplate: `%s | ${env.APP_NAME}`,
+    meta: [
+      {
+        once: true,
+        name: 'charset',
+        hid: 'charset',
+        content: 'utf-8',
+      },
+      {
+        once: true,
+        hid: 'viewport',
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        once: true,
+        property: 'og:title',
+        content: env.APP_NAME,
+        template: `%s | ${env.APP_NAME}`,
+        hid: 'og:title',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: pkg.description,
+      },
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  },
 
   buildModules: ['@unocss/nuxt'],
 
   modules: [
     '@nuxt/content',
-    // 'vue-plausible',
+    'vue-plausible',
 
     // always declare the sitemap module at end of array
     // '@nuxtjs/sitemap',
