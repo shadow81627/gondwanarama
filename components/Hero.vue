@@ -1,119 +1,52 @@
 <template>
-  <v-container class="pa-0 hidden-print-only" fluid v-on="$listeners">
-    <v-row no-gutters align="center" justify="center">
-      <v-col cols="12" align-self="center">
-        <v-card :color="color" flat tile dark>
-          <v-img
-            :lazy-src="placeholder"
-            :src="_src"
-            :srcset="srcset"
-            :alt="alt"
-            max-height="80vh"
-            :sizes="size"
-            :height="height"
-            :gradient="gradient"
-            :contain="contain"
-            color="grey"
+  <div
+    class="relative overflow-hidden bg-no-repeat bg-cover"
+    :style="`
+    background-position: 50%;
+    background-image: url(${src});
+    height: ${height}px;
+  `"
+  >
+    <div
+      class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+      style="
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        );
+      "
+    >
+      <div class="flex justify-center items-center h-full">
+        <div class="text-center text-black px-6 md:px-12">
+          <h1
+            class="text-3xl sm:text-4xl md:text-6xl xl:text-7xl mb-12"
+            font-brand
           >
-            <slot>
-              <v-container
-                class="fill-height align-items-end justify-start"
-                fluid
-              >
-                <v-row align="center" justify="center">
-                  <v-col class="text-center" cols="12">
-                    <h1 v-if="heading" class="mb-4 text-shadow">
-                      {{ heading }}
-                    </h1>
-                    <h2 v-if="subheading" class="subheading text-shadow">
-                      {{ subheading }}
-                    </h2>
-                  </v-col>
-                </v-row>
-              </v-container>
-            </slot>
-          </v-img>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+            <span v-if="heading">{{ heading }}</span>
+            <br v-if="heading" />
+            <span v-if="subheading" text-2xl>{{ subheading }}</span>
+          </h1>
+          <slot> </slot>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
+    height: { type: Number, default: 500 },
     heading: { type: String, default: null },
     subheading: { type: String, default: null },
     alt: { type: String, default: '' },
-    contain: { type: Boolean, default: undefined },
-    gradient: {
-      type: String,
-      default: 'rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)',
-    },
-    width: { type: [Number, String], default: 1280 },
-    height: { type: [Number, String], default: 630 },
-    color: {
-      type: String,
-      default: null,
-    },
     src: {
       type: String,
-      default: '/cover.jpg',
+      default: '/img/banners/home.png',
     },
-  },
-  head() {
-    return {
-      meta: [
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.href,
-        },
-        {
-          hid: 'og:image:width',
-          property: 'og:image:width',
-          content: 1280,
-        },
-        {
-          hid: 'og:image:height',
-          property: 'og:image:height',
-          content: 630,
-        },
-      ],
-      link: [
-        {
-          rel: 'preload',
-          as: 'image',
-          href: this.href,
-          imagesrcset: this.srcset,
-          imagesizes: this.size,
-        },
-      ],
-    }
-  },
-  computed: {
-    img() {
-      const { height } = this
-      return this.$img.getSizes(this.src, {
-        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
-        modifiers: {
-          format: 'webp',
-          quality: 70,
-          height,
-        },
-      })
-    },
-    href() {
-      return `${this.$config.BASE_URL}${this._src}`
-    },
-    _src() {
-      return this.img.src
-    },
-    size() {
-      return this.img.size
-    },
-    placeholder() {
-      return this.$img(this.src, { format: 'jpg', width: 10, quality: 70 })
+    gradient: {
+      type: String,
+      default: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))',
     },
   },
 }
