@@ -24,8 +24,8 @@
   </section>
 </template>
 
-<script setup>
-const { data: items } = await useAsyncData(`content-portfolio`, () => {
+<script setup lang="ts">
+const { data: items } = await useAsyncData('content-portfolio', () => {
   return queryContent('/portfolio').sort({ pos: 1 }).find()
 })
 </script>

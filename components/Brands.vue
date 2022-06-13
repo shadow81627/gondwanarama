@@ -4,6 +4,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       <img
         v-for="item of items"
+        :key="item.name"
         :src="`/img/brands/${item._path.replace(/^.*[\\\/]/, '')}.png`"
         :alt="item.name"
         class="m-auto"
@@ -12,7 +13,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { data: items } = await useAsyncData(`content-brands`, () => {
   return queryContent('/brands').sort({ pos: 1 }).find()
 })

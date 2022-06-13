@@ -73,7 +73,7 @@
 </template>
 
 <script setup>
-const { data: items } = await useAsyncData(`content-navigation`, () => {
+const { data: items } = await useAsyncData('content-navigation', () => {
   return queryContent('/navigation').sort({ pos: 1 }).find()
 })
 const draw = ref(false)

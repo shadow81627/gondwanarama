@@ -33,7 +33,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     height: { type: Number, default: 500 },
