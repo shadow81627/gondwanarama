@@ -3,8 +3,8 @@
     <Title v-if="title" itemprop="name">{{ title }}</Title>
     <Hero
       :height="960"
-      heading="Gondwanarama"
-      subheading="Nellie Pease, artist & palaeontologist from Brisbane, Australia. Big fan of marsupials, bugs, & ancient supercontinents."
+      :heading="title"
+      subheading="Artist and Scientific Illustrator"
     ></Hero>
     <AboutSection></AboutSection>
     <PortfolioSection></PortfolioSection>
@@ -17,7 +17,7 @@ export default {
   name: 'HomePage',
   data() {
     return {
-      title: 'Gondwanarama',
+      title: 'Nellie Pease',
     }
   },
 }

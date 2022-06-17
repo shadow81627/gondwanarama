@@ -2,9 +2,7 @@ import { defineNuxtConfig } from 'nuxt'
 import pkg from './package'
 
 const env = {
-  APP_NAME:
-    process.env.APP_NAME ??
-    `${pkg.name.charAt(0).toUpperCase()}${pkg.name.slice(1)}`,
+  APP_NAME: 'Nellie Pease',
 }
 
 const colors = {

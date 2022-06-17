@@ -11,13 +11,7 @@
           class="flex items-center text-black-900 hover:text-black-900 focus:text-black-900 mt-2 lg:mt-0 mr-1"
           to="/"
         >
-          <img
-            src="/logo.svg"
-            class="navbar-brand"
-            height="24"
-            width="167"
-            alt="Gondwanarama"
-          />
+          <span class="font-brand text-2xl">Nellie Pease</span>
         </nuxt-link>
       </div>
 
