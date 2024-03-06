@@ -1,5 +1,6 @@
 {
   "name": "Home",
+  "icon": "carbon:home",
   "url": "/",
   "pos": "1/1"
 }

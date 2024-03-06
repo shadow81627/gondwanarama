@@ -1,5 +1,6 @@
 {
   "name": "About",
+  "icon": "carbon:information",
   "url": "/about",
   "pos": "1/2"
 }

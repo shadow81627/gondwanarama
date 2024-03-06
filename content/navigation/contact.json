@@ -1,5 +1,6 @@
 {
   "name": "Contact",
+  "icon": "bx:message",
   "url": "/contact",
   "pos": "1/6"
 }

@@ -69,6 +69,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/plausible',
     '@vueuse/nuxt',
+    'nuxt-icon',
 
     // always declare the sitemap module at end of array
     // '@nuxtjs/sitemap',
