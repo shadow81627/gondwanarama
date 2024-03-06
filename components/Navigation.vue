@@ -40,7 +40,7 @@
         </ClientOnly>
 
         <button
-          class="navbar-toggler lg:hidden text-black border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+          class="hover:bg-gray-500/10 rounded-full btn navbar-toggler lg:hidden text-black border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
           type="button"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
