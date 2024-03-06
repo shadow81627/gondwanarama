@@ -7,36 +7,37 @@
       class="container-fluid w-full flex flex-wrap items-center justify-between px-6 h-109px"
     >
       <div class="container-fluid">
-        <nuxt-link
+        <NuxtLink
           class="flex items-center text-black-900 hover:text-black-900 focus:text-black-900 mt-2 lg:mt-0 mr-1"
           to="/"
         >
           <span class="font-brand text-2xl">Nellie Pease</span>
-        </nuxt-link>
+        </NuxtLink>
       </div>
 
       <div class="hidden lg:flex justify-between">
-        <Link
+        <NuxtLink
           v-for="item of items"
-          v-bind="item"
           :key="item.name"
+          :to="item.url"
           class="hover:text-gray-800 text-black-500 text-xl btn"
-        />
+          :class="{
+            'bg-gray-200': $route.path === item.url,
+            'hover:bg-gray-500/10': $route.path !== item.url,
+          }"
+          itemscope
+          itemtype="https://schema.org/SiteNavigationElement"
+          :target="item.url.startsWith('http') ? '_blank' : undefined"
+        >
+          {{ item.name }}
+        </NuxtLink>
       </div>
 
-      <teleport to="#sidenav">
-        <div
-          class="w-60 h-full shadow-md bg-nav px-1 absolute top-0 left-0 flex-col lg:hidden"
-          :class="{ hidden: !draw, flex: draw }"
-        >
-          <Link
-            v-for="item of items"
-            v-bind="item"
-            :key="item.name"
-            class="hover:text-gray-800 text-black-500 relative text-xl btn"
-          />
-        </div>
-      </teleport>
+      <ClientOnly>
+        <Teleport to="#sidenav">
+          <NavigationDraw v-model:draw="draw" :items="items"></NavigationDraw>
+        </Teleport>
+      </ClientOnly>
 
       <button
         class="navbar-toggler lg:hidden text-black border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
@@ -67,8 +68,8 @@
 </template>
 
 <script setup>
-const { data: items } = await useAsyncData('content-navigation', () => {
-  return queryContent('/navigation').sort({ pos: 1 }).find()
+const { data: items } = await useAsyncData('content-navigation', async () => {
+  return await queryContent('navigation').sort({ pos: 1 }).find()
 })
 const draw = ref(false)
 </script>
