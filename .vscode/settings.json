@@ -11,7 +11,7 @@
     "**/sw.js": true,
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "i18n-ally.localesPaths": [
     "lang"
