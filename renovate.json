@@ -3,7 +3,7 @@
   "prCreation": "status-success",
   "dependencyDashboard": true,
   "rollbackPrs": true,
-  "automerge": true,
+  "automerge": false,
   "bumpVersion": null,
   "labels": ["dependencies"],
   "lockFileMaintenance": {
