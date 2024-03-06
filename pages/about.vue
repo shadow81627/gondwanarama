@@ -1,7 +1,7 @@
 <template>
   <div>
     <Title v-if="title" itemprop="name">{{ title }}</Title>
-    <Hero :height="960" :heading="title"></Hero>
+    <Hero :height="500" :heading="title"></Hero>
     <AboutSection></AboutSection>
   </div>
 </template>

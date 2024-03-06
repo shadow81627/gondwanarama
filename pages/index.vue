@@ -2,7 +2,7 @@
   <div>
     <Title v-if="title" itemprop="name">{{ title }}</Title>
     <Hero
-      :height="960"
+      :height="500"
       :heading="title"
       subheading="Artist and Scientific Illustrator"
     ></Hero>
