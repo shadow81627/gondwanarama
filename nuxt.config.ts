@@ -76,7 +76,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/content',
     '@nuxtjs/plausible',
-    // '@vueuse/nuxt',
+    '@vueuse/nuxt',
 
     // always declare the sitemap module at end of array
     // '@nuxtjs/sitemap',
