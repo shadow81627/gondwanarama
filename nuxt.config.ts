@@ -26,25 +26,15 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: env.APP_NAME,
-      titleTemplate: `%s | ${env.APP_NAME}`,
+      titleTemplate: (titleChunk) => {
+        return titleChunk ? `${titleChunk} | ${env.APP_NAME}` : env.APP_NAME
+      },
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
       meta: [
         {
-          once: true,
-          name: 'charset',
-          hid: 'charset',
-          content: 'utf-8',
-        },
-        {
-          once: true,
-          hid: 'viewport',
-          name: 'viewport',
-          content: 'width=device-width, initial-scale=1',
-        },
-        {
-          once: true,
           property: 'og:title',
           content: env.APP_NAME,
-          template: `%s | ${env.APP_NAME}`,
           hid: 'og:title',
         },
         {
