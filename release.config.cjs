@@ -8,19 +8,19 @@ module.exports = {
     writerOpts: {
       mainTemplate: readFileSync(
         resolve(__dirname, '.release-notes-templates/template.hbs'),
-        'utf-8'
+        'utf-8',
       ),
       headerPartial: readFileSync(
         resolve(__dirname, '.release-notes-templates/header.hbs'),
-        'utf-8'
+        'utf-8',
       ),
       commitPartial: readFileSync(
         resolve(__dirname, '.release-notes-templates/commit.hbs'),
-        'utf-8'
+        'utf-8',
       ),
       footerPartial: readFileSync(
         resolve(__dirname, '.release-notes-templates/footer.hbs'),
-        'utf-8'
+        'utf-8',
       ),
     },
   },
