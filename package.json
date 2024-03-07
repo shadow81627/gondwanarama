@@ -30,7 +30,7 @@
     "@nuxtjs/plausible": "0.2.4",
     "@nuxtjs/sitemap": "2.4.0",
     "@typescript-eslint/eslint-plugin": "5.13.0",
-    "@typescript-eslint/parser": "5.13.0",
+    "@typescript-eslint/parser": "7.1.1",
     "@unocss/nuxt": "0.58.5",
     "@vue/eslint-config-standard": "6.1.0",
     "@vueuse/components": "10.9.0",
