@@ -1,4 +1,4 @@
-import pkg from './package'
+import pkg from './package.json'
 
 const env = {
   APP_NAME: 'Nellie Pease',
