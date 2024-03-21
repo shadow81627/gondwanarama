@@ -1103,12 +1103,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/collections@npm:^1.0.374":
-  version: 1.0.401
-  resolution: "@iconify/collections@npm:1.0.401"
+"@iconify/collections@npm:^1.0.406":
+  version: 1.0.406
+  resolution: "@iconify/collections@npm:1.0.406"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10/3e6f2943e67c4f63da71ad185574f80a50db235188c6f03ea15afa3380bb7733a6af5b7a0d8294c5d17c86f9a7cef86a5fbe5cf7897b0801ad1d304f0aadf922
+  checksum: 10/397d5c4155971d221436b20ee08ae5ac4a9ca02f115c4aa5bb80d37beee9a9f0632b198dbf28dde447137800840b6e999b55402d49c25badcfb837047d0bcc83
   languageName: node
   linkType: hard
 
@@ -1504,7 +1504,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.0.8, @nuxt/devtools-kit@npm:^1.0.6, @nuxt/devtools-kit@npm:^1.0.8":
+"@nuxt/devtools-kit@npm:1.0.8, @nuxt/devtools-kit@npm:^1.0.8":
   version: 1.0.8
   resolution: "@nuxt/devtools-kit@npm:1.0.8"
   dependencies:
@@ -1515,6 +1515,20 @@ __metadata:
     nuxt: ^3.9.0
     vite: "*"
   checksum: 10/1ad1fa77909a16679e3d65b2a5005a624ae2ab2ef41a359ac6e93a30375033859e96ad722e1bc44d0b11e6951ce4c1a29678231bc480665c7bf3e686cd023574
+  languageName: node
+  linkType: hard
+
+"@nuxt/devtools-kit@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@nuxt/devtools-kit@npm:1.1.1"
+  dependencies:
+    "@nuxt/kit": "npm:^3.11.1"
+    "@nuxt/schema": "npm:^3.11.1"
+    execa: "npm:^7.2.0"
+  peerDependencies:
+    nuxt: ^3.9.0
+    vite: "*"
+  checksum: 10/e5ac3511cdbd2f9945cda6b477107cb49572e267644f4802a4998bb724339a3d91094f0e43cd6033bf315deb257e2474f949691fb79949e5abc54a0deee13705
   languageName: node
   linkType: hard
 
@@ -1616,7 +1630,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.10.3, @nuxt/kit@npm:^3.10.0, @nuxt/kit@npm:^3.10.1, @nuxt/kit@npm:^3.10.2, @nuxt/kit@npm:^3.10.3, @nuxt/kit@npm:^3.8.1, @nuxt/kit@npm:^3.8.2, @nuxt/kit@npm:^3.9.0, @nuxt/kit@npm:^3.9.1":
+"@nuxt/kit@npm:3.10.3, @nuxt/kit@npm:^3.10.0, @nuxt/kit@npm:^3.10.1, @nuxt/kit@npm:^3.10.2, @nuxt/kit@npm:^3.10.3, @nuxt/kit@npm:^3.8.1, @nuxt/kit@npm:^3.8.2, @nuxt/kit@npm:^3.9.1":
   version: 3.10.3
   resolution: "@nuxt/kit@npm:3.10.3"
   dependencies:
@@ -1642,6 +1656,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxt/kit@npm:^3.11.1":
+  version: 3.11.1
+  resolution: "@nuxt/kit@npm:3.11.1"
+  dependencies:
+    "@nuxt/schema": "npm:3.11.1"
+    c12: "npm:^1.10.0"
+    consola: "npm:^3.2.3"
+    defu: "npm:^6.1.4"
+    globby: "npm:^14.0.1"
+    hash-sum: "npm:^2.0.0"
+    ignore: "npm:^5.3.1"
+    jiti: "npm:^1.21.0"
+    knitwork: "npm:^1.0.0"
+    mlly: "npm:^1.6.1"
+    pathe: "npm:^1.1.2"
+    pkg-types: "npm:^1.0.3"
+    scule: "npm:^1.3.0"
+    semver: "npm:^7.6.0"
+    ufo: "npm:^1.5.2"
+    unctx: "npm:^2.3.1"
+    unimport: "npm:^3.7.1"
+    untyped: "npm:^1.4.2"
+  checksum: 10/9b87d90fd52820fc399ac8731bba7c538d4cd9ae08a6c2f6185db6acd61a59ac1ad79cccbf971256c5205e82e54c13007d4310b566e42cf687e69866c3c13c79
+  languageName: node
+  linkType: hard
+
 "@nuxt/schema@npm:3.10.3, @nuxt/schema@npm:^3.10.3, @nuxt/schema@npm:^3.9.1":
   version: 3.10.3
   resolution: "@nuxt/schema@npm:3.10.3"
@@ -1658,6 +1698,25 @@ __metadata:
     unimport: "npm:^3.7.1"
     untyped: "npm:^1.4.2"
   checksum: 10/8cbc0024f260f93d2d3b1ab17669aab9ad0b2fdbfa172cae105684ebdcbe0e08a5ff0b8fd0ecdf5daa93b3b3cdf034dfc21cc98ffc92466396962d8fd00cb025
+  languageName: node
+  linkType: hard
+
+"@nuxt/schema@npm:3.11.1, @nuxt/schema@npm:^3.11.1":
+  version: 3.11.1
+  resolution: "@nuxt/schema@npm:3.11.1"
+  dependencies:
+    "@nuxt/ui-templates": "npm:^1.3.1"
+    consola: "npm:^3.2.3"
+    defu: "npm:^6.1.4"
+    hookable: "npm:^5.5.3"
+    pathe: "npm:^1.1.2"
+    pkg-types: "npm:^1.0.3"
+    scule: "npm:^1.3.0"
+    std-env: "npm:^3.7.0"
+    ufo: "npm:^1.5.2"
+    unimport: "npm:^3.7.1"
+    untyped: "npm:^1.4.2"
+  checksum: 10/d57c8f0890a63b8901f6a00ae4152891834a5651fec3f9ce4979e8bbb848f88a27795a7b8a351ccbfc7191e8ae44106589bb6f39207530babf1e4d1bb73d1627
   languageName: node
   linkType: hard
 
@@ -4044,6 +4103,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"c12@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "c12@npm:1.10.0"
+  dependencies:
+    chokidar: "npm:^3.6.0"
+    confbox: "npm:^0.1.3"
+    defu: "npm:^6.1.4"
+    dotenv: "npm:^16.4.5"
+    giget: "npm:^1.2.1"
+    jiti: "npm:^1.21.0"
+    mlly: "npm:^1.6.1"
+    ohash: "npm:^1.1.3"
+    pathe: "npm:^1.1.2"
+    perfect-debounce: "npm:^1.0.0"
+    pkg-types: "npm:^1.0.3"
+    rc9: "npm:^2.1.1"
+  checksum: 10/e592593fe3fb48c63ecae6a711045fae11904d1a50c5c7ff2920528e398a15e695d791f962662c51c6dcd3add8404b45a89ce9f305c4a029deef0bbd89466768
+  languageName: node
+  linkType: hard
+
 "c12@npm:^1.9.0":
   version: 1.9.0
   resolution: "c12@npm:1.9.0"
@@ -5091,7 +5170,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.3.1, dotenv@npm:^16.3.2":
+"dotenv@npm:^16.3.1, dotenv@npm:^16.3.2, dotenv@npm:^16.4.5":
   version: 16.4.5
   resolution: "dotenv@npm:16.4.5"
   checksum: 10/55a3134601115194ae0f924e54473459ed0d9fc340ae610b676e248cca45aa7c680d86365318ea964e6da4e2ea80c4514c1adab5adb43d6867fb57ff068f95c8
@@ -6970,7 +7049,7 @@ __metadata:
     eslint-plugin-prettier: "npm:5.1.3"
     eslint-plugin-vue: "npm:9.22.0"
     nuxt: "npm:3.10.3"
-    nuxt-icon: "npm:0.6.8"
+    nuxt-icon: "npm:0.6.10"
     prettier: "npm:3.2.5"
     typescript: "npm:5.3.3"
   languageName: unknown
@@ -9807,15 +9886,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-icon@npm:0.6.8":
-  version: 0.6.8
-  resolution: "nuxt-icon@npm:0.6.8"
+"nuxt-icon@npm:0.6.10":
+  version: 0.6.10
+  resolution: "nuxt-icon@npm:0.6.10"
   dependencies:
-    "@iconify/collections": "npm:^1.0.374"
+    "@iconify/collections": "npm:^1.0.406"
     "@iconify/vue": "npm:^4.1.1"
-    "@nuxt/devtools-kit": "npm:^1.0.6"
-    "@nuxt/kit": "npm:^3.9.0"
-  checksum: 10/1904a8c62c2f7293358453f969e54a7ddf50fbdd232db703b5e712eaf9f450933df10cde6bafc0348198dd0a33c3f99057f0be8d92b9675d2ca489b45aca5d27
+    "@nuxt/devtools-kit": "npm:^1.1.1"
+    "@nuxt/kit": "npm:^3.11.1"
+  checksum: 10/49aef1701c97948eb2a246012c4e8db5511a81ec1c6e7c221c70e786f2e87ed9b62911001b85889c4f930e3d4a8bedce133d360cfecd700187c49383856d1eb6
   languageName: node
   linkType: hard
 
@@ -12540,6 +12619,13 @@ __metadata:
   version: 1.4.0
   resolution: "ufo@npm:1.4.0"
   checksum: 10/b7aea8503878dc5ad797d8fc6fe39fec64d9cc7e89fb147ef86ec676e37bb462d99d67c6aad20b15f7d3e6d275d66666b29214422e268f1d98f6eaf707a207a6
+  languageName: node
+  linkType: hard
+
+"ufo@npm:^1.5.2":
+  version: 1.5.3
+  resolution: "ufo@npm:1.5.3"
+  checksum: 10/2b30dddd873c643efecdb58cfe457183cd4d95937ccdacca6942c697b87a2c578232c25a5149fda85436696bf0fdbc213bf2b220874712bc3e58c0fb00a2c950
   languageName: node
   linkType: hard
 
